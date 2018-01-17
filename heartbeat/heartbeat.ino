@@ -10,6 +10,8 @@ void loop() {
   long time = millis(); //begin count of ms
   Serial.print(time / 1000); //conversion to seconds
   Serial.println(" seconds have passed.");
+  Serial.print("Raw time (in ms): ");
+  Serial.println(time);
   digitalWrite(13, HIGH);
   delay(500); //pause
   digitalWrite(13, LOW);
